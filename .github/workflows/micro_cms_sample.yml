@@ -1,0 +1,20 @@
+name: microCMS Now Deploy
+on:
+  # push時の条件
+  push:
+    branches:
+      - master
+  # microCMSが更新されたときの条件
+  repository_dispatch:
+    types: [micro_cms_updated]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: amondnet/now-deployment@v2
+        with:
+          zeit-token: ${{ secrets.MICROCMS_SAMPLE_NOW_ZEIT_TOKEN }}
+          now-org-id: ${{ secrets.MICROCMS_SAMPLE_NOW_ORG_ID }}
+          now-project-id: ${{ secrets.MICROCMS_SAMPLE_NOW_PROJECT_ID }}
