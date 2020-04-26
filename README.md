@@ -21,3 +21,4 @@ npx now
   - [Webhook - カスタム通知](https://microcms.io/blog/custom_webhook/)
 - 書いた記事
   - [APIベース・日本語UIで使いやすい microCMS を Gridsome で使う](https://kic-yuuki.hatenablog.com/entry/2020/04/19/185421)
+  - [microCMS のコンテンツ更新のタイミングで Vercel（ZEIT Now） を再ビルド・デプロイさせる](https://kic-yuuki.hatenablog.com/entry/microcms-custom-webhook-to-vercel)
