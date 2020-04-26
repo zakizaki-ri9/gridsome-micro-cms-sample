@@ -1,14 +1,23 @@
-# Default starter for Gridsome
+# Gridsome x microCMSの素振り
 
-This is the project you get when you run `gridsome create new-project`.
+## Setup
 
-### 1. Install Gridsome CLI tool if you don't have
+```bash
+npm install
+npm run develop
+```
 
-`npm install --global @gridsome/cli`
+## Deploy to ZEIT Now
 
-### 2. Create a Gridsome project
+```bash
+npx now
+```
 
-1. `gridsome create my-gridsome-site` to install default starter
-2. `cd my-gridsome-site` to open the folder
-3. `gridsome develop` to start a local dev server at `http://localhost:8080`
-4. Happy coding 🎉🙌
+## 参考URL
+
+- ZEIT Now系
+  - [Deploy Hooks](https://vercel.com/docs/v2/more/deploy-hooks?query=deploy#)
+- microCMS系
+  - [Webhook - カスタム通知](https://microcms.io/blog/custom_webhook/)
+- 書いた記事
+  - [APIベース・日本語UIで使いやすい microCMS を Gridsome で使う](https://kic-yuuki.hatenablog.com/entry/2020/04/19/185421)
